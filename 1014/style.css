@@ -1,0 +1,66 @@
+.parent {
+  width: 900px;
+}
+
+.child1{
+  width: 280px;
+  float: right;
+}
+
+.child2{
+  width: 600px;
+  float: left;
+}
+
+.divide{
+  width: 300px;
+}
+
+.head {
+  background-color: LightSeaGreen;
+}
+body {
+  background-color: white;
+  color: black;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+h3 {
+  background-color: LightSeaGreen;
+  width: 600px;
+  color: black;
+}
+
+h1 {
+  background-color: LightSeaGreen;
+  text-align: center;
+  width: 900px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  background: white;
+  border-style: solid;
+  vertical-align: middle;
+  text-align: ;
+  width: 600px;
+  overflow: visible;
+  position: relative;
+  color: #000;
+  font-weight: normal;
+  font-size: 15px;
+}
+table.top {
+  background: LightSeaGreen;
+  border-style: groove;
+  vertical-align: middle;
+  text-align: center;
+  width: 900px;
+  padding-top: 0px;
+  overflow: visible;
+  color: #000;
+  font-weight: normal;
+  font-size: 20px;
+}
