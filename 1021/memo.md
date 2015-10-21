@@ -23,7 +23,7 @@ $(function(){
 A：セレクタ。idやclassを指定する  
 B：メソッド。指定したセレクタに対する処理  
 
-##イベントメソッド
+##メソッドのさんぷる
 
 ```javaScript
 //example cssをいじる
@@ -49,12 +49,6 @@ $(function(){
   });
 });
 
-```
-
-##エフェクトメソッド
-イベントが発生したときに使うと良い
-
-```javaScript
 $(function(){
   $('hoge').click(function(){
     //選択したセレクタが消える
@@ -89,4 +83,16 @@ $(function(){
 	});
 });
 
+```
+
+##こーるばっく
+第二引数として関数を書くと、処理が終わったときにそれを実行してくれる
+
+```javaScript
+//example
+$(function(){
+  $('hoge').fadeOut(1000,function(){
+    alert("hogehoge");
+  });  
+});
 ```
