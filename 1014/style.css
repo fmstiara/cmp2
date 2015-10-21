@@ -32,6 +32,12 @@ h3 {
   color: black;
 }
 
+h3.cv2 {
+  background-color: LightSeaGreen;
+  width: 900px;
+  color: black;
+}
+
 h1 {
   background-color: LightSeaGreen;
   text-align: center;

@@ -45,24 +45,19 @@ function draw() {
   counter++;
 }
 
-// reset board when mouse is pressed
-
-// Fill board randomly
 function init() {
   var dateObj = new Date();
   for (var i = 0; i < columns; i++) {
     for (var j = 0; j < rows; j++) {
-      // Lining the edges with 0s
       if (i == 0 || j == 0 || i == columns-1 || j == rows-1) board[i][j] = 0;
-      // Filling the rest randomly
       board[i][j]= 0;
       next[i][j] = 0;
     }
   }
 
   r = floor(random(100,255));
-  g = floor(random(100,255));
-  b = floor(random(100,255));
+  g = floor(random(150,255));
+  b = floor(random(150,255));
 
   board[15][10] = 1;
   board[15][12] = 1;
@@ -144,32 +139,26 @@ function init() {
 
 }
 
-// The process of creating the new generation
 function generate() {
 
-  // Loop through every spot in our 2D array and check spots neighbors
   for (var x = 1; x < columns - 1; x++) {
     for (var y = 1; y < rows - 1; y++) {
-      // Add up all the states in a 3x3 surrounding grid
+
       var neighbors = 0;
       for (var i = -1; i <= 1; i++) {
         for (var j = -1; j <= 1; j++) {
           neighbors += board[x+i][y+j];
         }
       }
-
-      // A little trick to subtract the current cell's state since
-      // we added it in the above loop
       neighbors -= board[x][y];
-      // Rules of Life
+
       if      ((board[x][y] == 1) && (neighbors <  2)) next[x][y] = 0;
       else if ((board[x][y] == 1) && (neighbors >  3)) next[x][y] = 0;
       else if ((board[x][y] == 0) && (neighbors == 3)) next[x][y] = 1;
-      else                                             next[x][y] = board[x][y]; // Stasis
+      else                                             next[x][y] = board[x][y];
     }
   }
 
-  // Swap!
   var temp = board;
   board = next;
   next = temp;
