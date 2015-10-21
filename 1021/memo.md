@@ -1,9 +1,9 @@
 #jQueryの使い方
 
-#最高のサンプルページ
+#最高のさんぷるぺーじとりふぁれんす
 [最高のサンプルページ](http://www.shiftbrain.co.jp/book/jquery/)  
 [jQueryプラグインまとめ](http://matome.naver.jp/odai/2130274551378616401)  
-
+[日本語リファレンス](http://semooh.jp/jquery/)
 ##基本形
 
 ```javaScript
