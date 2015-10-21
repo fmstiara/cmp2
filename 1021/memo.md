@@ -1,5 +1,8 @@
 #jQueryの使い方
 
+#最高のサンプルページ
+[最高のサンプルページ](http://www.shiftbrain.co.jp/book/jquery/)
+
 ##基本形
 
 ```javaScript
