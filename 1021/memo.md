@@ -1,9 +1,28 @@
 #jQueryの使い方
 
 #最高のさんぷるぺーじとりふぁれんす
+
 [最高のサンプルページ](http://www.shiftbrain.co.jp/book/jquery/)  
 [jQueryプラグインまとめ](http://matome.naver.jp/odai/2130274551378616401)  
 [日本語リファレンス](http://semooh.jp/jquery/)  
+
+##読み込み
+
+jQueryのデータはhtml内のhead内で読み込む
+
+```html
+<head>
+  <script src = "jquery-2.1.1.min.js"></script>
+</head>
+```
+
+URLで指定することもできる.ネットにつながってないと使えないので注意
+
+```html
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+```
 
 ##基本形
 
@@ -23,6 +42,9 @@ $(function(){
 
 A：セレクタ。idやclassを指定する  
 B：メソッド。指定したセレクタに対する処理  
+$("form");       // タグ名="form"  
+$(".className"); // クラス名="className"  
+$("#formId");    // ID="formId"  
 
 ##メソッドのさんぷる
 
