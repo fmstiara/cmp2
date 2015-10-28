@@ -57,3 +57,23 @@ $(function{
   });
 });
 ```
+
+##jQueryによるhtmlの操作
+
+```javascript
+
+$("htmlの要素名").thread("hoge");
+
+```
+threadの部分を以下のものに変える
+
+- html("hoge")
+  - 要素の中身をhogeに差し替える
+- append("hoge")
+  - 要素の**最後**にhogeを追加
+- prepend("hoge")
+  - 要素の**最初**にhogeを追加
+- after("hoge")
+  - 要素の兄弟として**後**にhogeを追加
+- before("hoge")
+  - 要素の兄弟として**前**にhogeを追加
