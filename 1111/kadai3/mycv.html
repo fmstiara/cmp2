@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title> 履歴書 </title>
+  <style>
+    table, td{
+      border: solid 1px #113366;
+      border-collapse: collapse;
+    }
+    div{
+      padding: 10px;
+      margin 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>私の履歴書</h1>
+  <form action="mycv.php" method="get">
+    ・氏名<input type = "text" name = "name" value = "山田太郎"><br>
+    ・性別
+    <input type="radio" name="sex" value="男性">男性
+    <input type="radio" name="sex" value="女性">女性<br>
+    ・所属<br>
+    <input type="radio" name="belong" value="現象数理">現象数理 <br>
+    <input type="radio" name="belong" value="先端メディアサイエンス" checked="checked">先端メディアサイエンス <br>
+    <input type="radio" name="belong" value="ネットワークデザイン" >ネットワークデザイン <br>
+    ・趣味<br>
+    <textarea name = "hobby" cols="40" rows="5">Here is an area to be filled in.</textarea><br>
+    ・嫌いなもの<br>
+    <textarea name = "notlike" cols="40" rows="5">Here is an area to be filled in.</textarea><br>
+    <input type="submit" value="作成">
+  </form>
+
+</body>
+</html>
